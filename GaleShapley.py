@@ -14,9 +14,9 @@ for i in range(max):
     mc[i]={}
 def wPrefersMoverM1(w,m,m1,n):
     for i in range(1,n+1):
-        if women[w][i]==m:
-            return 1
-        else:
+        if(women[w][i]==m):         ##Check in the woman 'w' preference list women[][];
+            return 1               ## If it is 'm' return true else if it is 'm1' return false.
+        elif(women[w][i]==m1):
             return 0
 def stablemarriage(n):
     freecount=n
